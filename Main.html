@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find's Portfolio Website</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+    body {
+      font-family: 'Concert One', Arial, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .showcase-item,
+    .pricing-item {
+      background-color: #333333;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .fade-in {
+      animation: fadeInAnimation 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .renders {
+      background-color: #333333;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .renders h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .renders p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .renders img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .scroll-button {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .scroll-button:hover {
+      background-color: #555;
+    }
+
+    body {
+      background-color: #555555;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+
+    .mode-switch {
+     font-family: 'Concert One', Arial, sans-serif;  
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 999;
+      background-color: #252525;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 16px;
+      outline: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .dark-mode {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Find's Portfolio</h1>
+    <div>
+      <button class="scroll-button" onclick="scrollToSection('showcases')">Showcases</button>
+      <button class="scroll-button" onclick="scrollToSection('renders')">Renders</button>
+      <button class="scroll-button" onclick="scrollToSection('pricing')">Pricing</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>I am a professional programmer/scripter with over 8 years of experience, i also model started in "Roblox Studio" but moved to blender around 2 months ago. i love to make games and model assets so if you would like my help let me know!</p>
+      <p>Discord: finddoesprogramming or display name: Programmer_Find</p>
+    </section>
+
+    <section id="showcases" class="fade-in">
+      <h2>Showcases</h2>
+      <div class="showcase-item">
+        <h2>MAIN SHOWCASE FOR CODING!</h2>
+        <p>This one you have to check out before any of the others this showcases all kinds of stuff i can do just by pressing a button so please try this one first! <a href="https://www.roblox.com/games/14216139480/Dont-PUSH-That-Button">https://www.roblox.com/games/14216139480/Dont-PUSH-That-Button</a></p>
+      </div>
+      <div class="showcase-item">
+        <h2>Pet Clickers!</h2>
+        <p>An old game I made that got around 150k+ visits. I was revamping it but moved on to better projects. <a href="https://www.roblox.com/games/5715133262/RE-OPEN-Pet-Clickers">https://www.roblox.com/games/5715133262/RE-OPEN-Pet-Clickers</a></p>
+      </div>
+      <div class="showcase-item">
+        <h2>Gun System</h2> 
+        <p>Just a small simple gun system I made in my free time. Feel free to check it out. <a href="https://www.roblox.com/games/9832137790/First-person-shooting">https://www.roblox.com/games/9832137790/First-person-shooting</a></p>
+      </div>
+      <div class="showcase-item">
+        <h2>Roblox Profile Creations</h2>
+        <p>Here you can check out all of the other creations I have on my Roblox profile. Not all of them are good, but if you need more proof, just ask me to make anything you could need and I will do so! <a href="https://www.roblox.com/users/1198999038/profile#!/creations">https://www.roblox.com/users/1198999038/profile#!/creations</a></p>
+      </div>
+    </section>
+
+    <section id="renders" class="fade-in">
+      <h2>Renders</h2>
+      <div class="renders">
+        <h2>Boxing Ring</h2>
+        <p>Small commission i did of a boxing ring with a render of a high and low camera.</p>
+        <a href="https://ibb.co/HxX1y97"><img src="https://i.ibb.co/fnQBWTM/Box-Ring-Lower.png" alt="Box-Ring-Lower" border="0"></a>
+        <a href="https://ibb.co/FnXyywq"><img src="https://i.ibb.co/rv3zz6f/Box-Ring-Upper.png" alt="Box-Ring-Upper" border="0"></a>
+      </div>
+      <div class="renders">
+        <h2>Forest Environment Render</h2>
+        <p>A simple forest environment I made in Blender (5 minutes)</p>
+        <a href="https://ibb.co/zVg6Kzh"><img src="https://i.ibb.co/VYGwXsW/Nice-Forest-Scene.png" alt="Nice-Forest-Scene" border="0"></a>
+      </div>
+      <div class="renders">
+        <h2>Hidden Building</h2>
+        <p>Yea umm the door is bad but yea nvm..</p>
+        <a href="https://ibb.co/HtgLJ36"><img src="https://i.ibb.co/m9zrxgk/The-Door-Is-Bruh.png" alt="The-Door-Is-Bruh" border="0"></a>
+      </div>
+      <div class="renders">
+        <h2>Rocky Portal</h2>
+        <p>Took about 20 min because the transparency was being weird but other than that yea here it is! (btw the time would have been like 10 min but i added lighting and all that stuff to make it look better)</p>
+        <a href="https://ibb.co/84Q4tpR"><img src="https://i.ibb.co/NnGnbPk/Rocky-Portal.png" alt="Rocky-Portal" border="0"></a>
+      </div>
+      <div class="renders">
+        <h2>Small Isometric Room</h2>
+        <p>Took like 30 min i did more of the time thinking of what to add then adding and its still not that good lol but anyways here it is!</p>
+        <a href="https://ibb.co/nsPkff2"><img src="https://i.ibb.co/Y70j889/idkhouse.png" alt="idkhouse" border="0"></a>
+      </div>
+      <div class="renders">
+        <h2>Realistic Rock</h2>
+        <p>Just a simple sort of realistic rock lol</p>
+        <a href="https://ibb.co/1fScd6z"><img src="https://i.ibb.co/27bJsNZ/Realistic-Rock.png" alt="Realistic-Rock" border="0"></a>
+      </div>
+      <div class="renders">
+        <h2>Tool Pack</h2>
+        <p>Just some tools i made for a commission shovel is eh but other than that its alright.</p>
+        <a href="https://ibb.co/1ZSsnvs"><img src="https://i.ibb.co/8MhzBKz/ToolsLol.png" alt="ToolsLol" border="0"></a>
+      </div>
+      <div class="renders">
+      <h2>Nothing Else! i will be adding more as i go!</h2>
+      </div>
+    </section>
+
+    <section id="pricing" class="fade-in">
+      <h2>Pricing Scripting</h2>
+      <div class="pricing-item">
+        <h2>Short Term</h2>
+        <p>For commissions for something small that's "short term," depending on what it is, I will charge in the range of [100 - 10,000] Robux.</p>
+      </div>
+      <div class="pricing-item">
+        <h2>Long Term</h2>
+        <p>For full games or for a full-term scripting job, I will charge in the range of [1,000 - 50,000] Robux.</p>
+      </div>
+      <h2>Pricing Modeling</h2>
+      <div class="pricing-item">
+        <h2>Assets</h2>
+        <p>For assets or 3D models depending on the amount, I'll charge in the range of [500 - 250,000] Robux, but most of the time for 1 asset, I do 100 - 1000 Robux.</p>
+      </div>
+      <div class="pricing-item">
+        <h2>Full Models</h2>
+        <p>For a full map or anything just giant like a huge project I'll charge in the range of [10,000 - 1,000,000] Robux, depending on what im asked to create!</p>
+      </div>
+    </section>
+  </div>
+  
+  <body>
+  <button class="mode-switch" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  
+
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleDarkMode() {
+      const body = document.querySelector('body');
+      const modeSwitch = document.querySelector('.mode-switch');
+
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        modeSwitch.textContent = 'Toggle Dark Mode';
+      } else {
+        body.classList.add('dark-mode');
+        modeSwitch.textContent = 'Toggle Light Mode';
+      }
+    }
+  </script>
+</body>
+</html>
